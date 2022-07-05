@@ -4,12 +4,7 @@
       <h1>MIMINMO</h1>
       <button>Create Blog</button>
     </nav>
-    <router-link
-      :to="{ name: 'ShowBlogs' }"
-      class="cursor-pointer text-xs"
-      tag="div"
-      >Go to show page</router-link
-    >
+
     <div class="mb-10">
       <h2 class="text-center">BLOGS</h2>
     </div>
