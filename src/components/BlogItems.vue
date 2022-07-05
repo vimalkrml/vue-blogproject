@@ -9,6 +9,7 @@
           src="../assets/danie-franco-by0XNgDemsc-unsplash.jpg"
           class="block max-w-full"
         />
+
         <div v-show="blogs">
           <h2>{{ blog.title }}</h2>
           <p class="w-[40%]">
@@ -32,6 +33,16 @@ export default {
       const res = await fetch("http://localhost:3000/blogs");
       const data = await res.json();
       return data;
+    },
+    async showBlog(blogid) {
+      console.log(blogid);
+      await fetch("http://localhost:3000/blogs/" + blogid)
+        .then((res) => res.json())
+        .then((json) => {
+          this.blog = json;
+          console.log(json);
+          return;
+        });
     },
   },
   async created() {
