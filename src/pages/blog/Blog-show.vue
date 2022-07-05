@@ -1,8 +1,6 @@
 <template>
   <div class="mt-10">
-    <div>
-      <slot></slot>
-    </div>
+    <div></div>
     <router-link :to="{ name: 'Home' }" class="cursor-pointer text-xs" tag="div"
       >Go to main page</router-link
     >
