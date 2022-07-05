@@ -1,15 +1,9 @@
 <template>
   <section class="flex flex-wrap gap-5">
-    <div
-      class="w-[40%] mx-auto mb-5"
-      v-for="blog in blogs"
-      :key="blog.id"
-      @click="showBlog(blog)"
-    >
+    <div class="w-[40%] mx-auto mb-5" v-for="blog in blogs" :key="blog.id">
       <router-link
-        :to="{ name: 'ShowBlogs' }"
+        :to="{ name: 'ShowBlogs', params: { id: blog.id } }"
         class="cursor-pointer text-xs"
-        :blog="blog"
       >
         <img
           src="../assets/danie-franco-by0XNgDemsc-unsplash.jpg"
@@ -31,13 +25,9 @@ export default {
   data() {
     return {
       blogs: "",
-      individualBlog: null,
     };
   },
   methods: {
-    showBlog(blog) {
-      this.individualBlog = blog;
-    },
     async getBlogs() {
       const res = await fetch("http://localhost:3000/blogs");
       const data = await res.json();

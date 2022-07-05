@@ -8,8 +8,9 @@ export default [
     component: BlogHome,
   },
   {
-    path: "/show",
+    path: "/show/:id",
     name: "ShowBlogs",
     component: Blogshow,
+    props: true,
   },
 ];

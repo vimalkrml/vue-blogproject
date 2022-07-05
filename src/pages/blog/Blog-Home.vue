@@ -8,7 +8,7 @@
     <div class="mb-10">
       <h2 class="text-center">BLOGS</h2>
     </div>
-    <div class="">
+    <div>
       <blog-items></blog-items>
     </div>
   </div>
