@@ -13,8 +13,8 @@
     <div class="mb-10">
       <h2 class="text-center">BLOGS</h2>
     </div>
-    <div class="flex flex-wrap gap-5">
-      <blog-items v-for="n in 10" :key="n"></blog-items>
+    <div class="">
+      <blog-items></blog-items>
     </div>
   </div>
 </template>
