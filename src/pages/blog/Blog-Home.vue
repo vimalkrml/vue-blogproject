@@ -2,7 +2,7 @@
   <div class="container px-5 mx-auto pt-3">
     <nav class="flex justify-between">
       <h1>MIMINMO</h1>
-      <button>Create Blog</button>
+      <button class="" >Create Blog</button>
     </nav>
     <router-link
       :to="{ name: 'ShowBlogs' }"
