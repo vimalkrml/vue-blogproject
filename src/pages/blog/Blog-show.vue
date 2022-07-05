@@ -1,5 +1,6 @@
 <template>
   <div class="container mt-10 mx-auto">
+    <nav-bar></nav-bar>
     <img :src="blog.url" class="block max-w-full" />
     <div>
       <h2>{{ blog.title }}</h2>
@@ -9,8 +10,12 @@
 </template>
 
 <script>
+import NavBar from "./Nav-bar.vue";
 export default {
   name: "Blog-show",
+  components: {
+    NavBar,
+  },
   props: ["id"],
   data() {
     return {

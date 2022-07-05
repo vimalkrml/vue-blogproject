@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'primary': ['Playfair Display', 'sans-serif'],
-        'secondary': ['Ubuntu', 'sans-serif']
+        'secondary': ['Ubuntu', 'sans-serif'],
+        'miminmo':['Inconsolata', 'monospace']
       }
     },
   },
