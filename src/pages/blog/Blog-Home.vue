@@ -17,7 +17,7 @@
 <script>
 import BlogItems from "../../components/BlogItems.vue";
 import FooterBlog from "../../components/Footer-blog.vue";
-import NavBar from "./Nav-bar.vue";
+import NavBar from "../../components/Nav-bar.vue";
 export default {
   components: {
     BlogItems,

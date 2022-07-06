@@ -1,17 +1,19 @@
 <template>
   <div class="container mt-10 mx-auto">
     <nav-bar></nav-bar>
-    <img :src="blog.url" class="block max-w-full" />
+    <img :src="blog.url" class="block max-w-full mb-5" />
     <div>
-      <h2>{{ blog.title }}</h2>
-      <p>{{ blog.content }}</p>
-      <p>{{ blog.description }}</p>
+      <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
+      <p class="text-sm mb-5 font-primary leading-6 tracking-[0.6px]">
+        {{ blog.content }}
+      </p>
+      <p class="font-primary">{{ blog.description }}</p>
     </div>
   </div>
 </template>
 
 <script>
-import NavBar from "./Nav-bar.vue";
+import NavBar from "../../components/Nav-bar.vue";
 export default {
   name: "Blog-show",
   components: {
