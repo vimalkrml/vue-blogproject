@@ -4,10 +4,10 @@
     <img :src="blog.url" class="block max-w-full mb-5" />
     <div>
       <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
-      <p class="text-sm mb-5 font-primary leading-6 tracking-[0.6px]">
+      <p class="text-lg mb-5 font-primary leading-6 tracking-[0.6px]">
         {{ blog.content }}
       </p>
-      <p class="font-primary">{{ blog.description }}</p>
+      <p class="font-primary text-lg">{{ blog.description }}</p>
     </div>
   </div>
 </template>
