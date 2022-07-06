@@ -32,6 +32,20 @@
       <p class="font-primary mb-5 text-md text-[#626262]">
         {{ blog.description }}
       </p>
+      <img
+        :src="blog.image"
+        class="
+          block
+          grayscale
+          mb-5
+          h-[300px]
+          md:h-[300px]
+          lg:h-[395px]
+          xl:h-[600px]
+          w-full
+          object-cover
+        "
+      />
       <p class="font-primary text-md mb-10">{{ blog.conclusion }}</p>
     </div>
   </custom-container>
