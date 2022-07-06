@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="md:flex flex-wrap gap-5">
+    <div class="md:flex flex-wrap gap-5" v-if="blogs.length > 0">
       <div
         class="md:w-[40%] mx-auto mb-20 md:mb-5"
         v-for="blog in blogs"
@@ -42,15 +42,14 @@
         </router-link>
       </div>
     </div>
-
-    <!-- <div class="text-center mt-10 mb-20">
-      <button class="border-2 border-gray-300 px-4 py-2">Load more</button>
-    </div> -->
+    <no-blogs v-else></no-blogs>
   </section>
 </template>
 
 <script>
+import NoBlogs from "./No-blogs.vue";
 export default {
+  components: { NoBlogs },
   data() {
     return {
       blogs: "",

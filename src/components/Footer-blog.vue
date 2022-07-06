@@ -1,5 +1,16 @@
 <template>
-  <div class="sm:flex justify-between bg-gray-100 px-10 md:px-24 py-5 md:py-9">
+  <div
+    class="
+      sm:flex
+      justify-between
+      bg-gray-100
+      px-10
+      md:px-24
+      py-5
+      md:py-9
+      bottom-0
+    "
+  >
     <div class="flex gap-3 mb-5 sm:mb-0 justify-center sm:justify-start">
       <a class="font-primary text-sm" href="">Terms and conditions</a>
       <p class="font-primary text-sm">Privacy</p>
