@@ -12,15 +12,7 @@
         >
           <img
             :src="blog.url"
-            class="
-              block
-              mb-5
-              h-[300px]
-              md:h-[300px]
-              lg:h-[395px]
-              w-full
-              object-cover
-            "
+            class="block mb-5 h-[300px] md:h-[300px] lg:h-[395px] w-full object-cover "
           />
           <h3 class="font-secondary text-sm opacity-50 mb-3.5 uppercase">
             Lifestyle
@@ -28,13 +20,7 @@
           <div v-show="blogs">
             <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
             <p
-              class="
-                text-sm
-                font-primary
-                text-[#626262]
-                leading-6
-                tracking-[0.6px]
-              "
+              class="text-sm font-primary text-[#626262] leading-6 tracking-[0.6px]"
             >
               {{ blog.content }}
             </p>

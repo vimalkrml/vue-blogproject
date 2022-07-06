@@ -7,7 +7,7 @@
       <div class="w-5 md:w-8">
         <img src="../../assets/left-arrow.png" alt="Back" class="w-[20px]" />
       </div>
-      <h1 class="text-[#626262]" >Back to Home</h1>
+      <h1 class="text-[#626262] hover:font-bold" >Back to Home</h1>
     </router-link>
 
     <no-blogs v-if="isLoading"></no-blogs>
