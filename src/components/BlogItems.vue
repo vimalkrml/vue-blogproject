@@ -5,10 +5,9 @@
         :to="{ name: 'ShowBlogs', params: { id: blog.id } }"
         class="cursor-pointer text-xs"
       >
-        <img
-          src="../assets/danie-franco-by0XNgDemsc-unsplash.jpg"
-          class="block max-w-full"
-        />
+        <div class="w-full">
+          <img :src="blog.path" class="block max-w-full object-cover" />
+        </div>
 
         <div v-show="blogs">
           <h2>{{ blog.title }}</h2>
@@ -26,6 +25,7 @@ export default {
   data() {
     return {
       blogs: "",
+      // blogImages: [],
     };
   },
   methods: {
@@ -48,6 +48,10 @@ export default {
   async created() {
     console.log(await this.getBlogs());
     this.blogs = await this.getBlogs();
+    // let tempblog = JSON.parse(JSON.stringify(this.blogs));
+    // tempblog.forEach((blog) => {
+    //   this.blogImages.push(blog.path);
+    // });
   },
 };
 </script>
