@@ -7,7 +7,8 @@
       <p class="text-sm mb-5 font-primary leading-6 tracking-[0.6px]">
         {{ blog.content }}
       </p>
-      <p class="font-primary">{{ blog.description }}</p>
+      <p class="font-primary mb-5 text-sm">{{ blog.description }}</p>
+      <p class="font-primary text-sm">{{ blog.conclusion }}</p>
     </div>
   </div>
 </template>
@@ -23,7 +24,7 @@ export default {
   data() {
     return {
       blogID: this.id,
-      blog: { title: "", content: "", description: "" },
+      blog: { title: "", content: "", description: "", conclusion: "" },
     };
   },
   methods: {
