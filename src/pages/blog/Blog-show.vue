@@ -1,6 +1,5 @@
 <template>
   <div class="container mt-10 mx-auto">
-    <nav-bar></nav-bar>
     <img :src="blog.url" class="block max-w-full mb-5" />
     <div>
       <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
@@ -14,12 +13,8 @@
 </template>
 
 <script>
-import NavBar from "../../components/Nav-bar.vue";
 export default {
   name: "Blog-show",
-  components: {
-    NavBar,
-  },
   props: ["id"],
   data() {
     return {

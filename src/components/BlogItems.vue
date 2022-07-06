@@ -6,7 +6,10 @@
           :to="{ name: 'ShowBlogs', params: { id: blog.id } }"
           class="cursor-pointer text-xs"
         >
-          <img :src="blog.url" class="block mb-3.5" />
+          <img
+            :src="blog.url"
+            class="block mb-3.5 h-[395px] w-full object-cover"
+          />
           <h3 class="font-secondary text-sm opacity-50 mb-3.5 uppercase">
             Lifestyle
           </h3>
