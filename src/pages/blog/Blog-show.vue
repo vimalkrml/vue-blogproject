@@ -3,7 +3,8 @@
     <img :src="blog.url" class="block max-w-full" />
     <div>
       <h2>{{ blog.title }}</h2>
-      <p class="w-[50%]">{{ blog.content }}</p>
+      <p>{{ blog.content }}</p>
+      <p>{{ blog.description }}</p>
     </div>
   </div>
 </template>
@@ -15,7 +16,7 @@ export default {
   data() {
     return {
       blogID: this.id,
-      blog: { title: "", content: "" },
+      blog: { title: "", content: "", description: "" },
     };
   },
   methods: {
