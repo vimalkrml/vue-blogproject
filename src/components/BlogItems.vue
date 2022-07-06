@@ -8,7 +8,7 @@
         >
           <img
             :src="blog.url"
-            class="block mb-3.5 h-[395px] w-full object-cover"
+            class="block mb-5 h-[395px] w-full object-cover"
           />
           <h3 class="font-secondary text-sm opacity-50 mb-3.5 uppercase">
             Lifestyle
@@ -23,9 +23,9 @@
       </div>
     </div>
 
-    <div class="text-center mt-10 mb-20">
+    <!-- <div class="text-center mt-10 mb-20">
       <button class="border-2 border-gray-300 px-4 py-2">Load more</button>
-    </div>
+    </div> -->
   </section>
 </template>
 

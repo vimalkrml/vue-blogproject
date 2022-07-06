@@ -1,13 +1,13 @@
 <template>
   <div class="container mt-10 mx-auto">
-    <img :src="blog.url" class="block max-w-full mb-5" />
+    <img :src="blog.url" class="block mx-auto mb-5 " />
     <div>
-      <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
+      <h2 class="text-3xl font-primary mb-8 w-full text-center ">{{ blog.title }}</h2>
       <p class="text-lg mb-5 font-primary leading-6 tracking-[0.6px]">
         {{ blog.content }}
       </p>
-      <p class="font-primary mb-5 text-sm">{{ blog.description }}</p>
-      <p class="font-primary text-sm">{{ blog.conclusion }}</p>
+      <p class="font-primary mb-5 text-md">{{ blog.description }}</p>
+      <p class="font-primary text-md mb-10 ">{{ blog.conclusion }}</p>
     </div>
   </div>
 </template>
