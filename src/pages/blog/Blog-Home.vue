@@ -1,8 +1,4 @@
 <template>
-  <!-- <button class="">CREATE BLOG</button>
-    <div class="mb-10">
-      <h2 class="text-center">BLOGS</h2>
-    </div> -->
   <custom-container>
     <blog-items></blog-items>
   </custom-container>
