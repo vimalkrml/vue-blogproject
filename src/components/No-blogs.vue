@@ -1,6 +1,6 @@
 <template>
   <custom-container>
-    <div class="header text-center">
+    <div class="header text-center mb-96">
       <h1 class="text-3xl font-secondary font-bold text-gray-600">Loading</h1>
       <h2 class="text-xl font-secondary font-bold text-gray-600 mb-5">
         Please wait.

@@ -7,7 +7,7 @@
       <div class="w-5 md:w-8">
         <img src="../../assets/left-arrow.png" alt="Back" class="w-[20px]" />
       </div>
-      <h1 class="text-[#626262]" >Back to Home</h1>
+      <h1 class="text-[#626262]">Back to Home</h1>
     </router-link>
 
     <no-blogs v-if="isLoading"></no-blogs>
@@ -15,7 +15,16 @@
     <div v-else>
       <img
         :src="blog.url"
-        class="block mb-5 h-[300px] md:h-[300px] lg:h-[395px] xl:h-[600px] w-full object-cover"
+        class="
+          block
+          mb-5
+          h-[300px]
+          md:h-[300px]
+          lg:h-[395px]
+          xl:h-[600px]
+          w-full
+          object-cover
+        "
       />
       <div>
         <h2 class="text-3xl font-primary mb-8 w-full">
@@ -29,7 +38,17 @@
         </p>
         <img
           :src="blog.image"
-          class="block grayscale mb-5 h-[300px] md:h-[300px] lg:h-[395px] xl:h-[600px] w-full object-cover"
+          class="
+            block
+            grayscale
+            mb-5
+            h-[300px]
+            md:h-[300px]
+            lg:h-[395px]
+            xl:h-[600px]
+            w-full
+            object-cover
+          "
         />
         <p class="font-primary text-md mb-10">{{ blog.conclusion }}</p>
       </div>
