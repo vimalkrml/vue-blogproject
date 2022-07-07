@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import NavBar from "./pages/blog/Blog-createnav.vue";
+import NavBar from "./pages/blog/Blog-post.vue";
 import FooterBlog from "./components/Footer-blog.vue";
 
 export default {
