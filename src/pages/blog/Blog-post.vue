@@ -3,7 +3,7 @@
     <nav class="flex justify-between p-1 px-16 py-6">
       <h1 class="font-miminmo text-2xl tracking-widest">MIMINMØ</h1>
       <div class="font-primary flex gap-20 text-[#626262]">
-        <button @click="create_blog() " class="hover:text-slate-800 hover:font-bold">CREATE BLOG</button>
+        <button @click="create_blog()" class="">CREATE BLOG</button>
       </div>
     </nav>
     <tiptap class="text-center" />
@@ -29,7 +29,7 @@ export default {
     create_blog() {
       setTimeout(() => {
         this.createBlog = true;
-      }, 1000);
+      }, 500);
       console.log("blog");
     },
   },
