@@ -1,9 +1,6 @@
 <template>
   <div class="container mt-10 mx-auto">
-    <router-link :to="{ name: 'Home' }" class="cursor-pointer text-xs" tag="div"
-      >Go to Home page</router-link
-    >
-    <img :src="blog.path" class="block max-w-full" />
+    <img :src="blog.url" class="block max-w-full" />
     <div>
       <h2>{{ blog.title }}</h2>
       <p class="w-[50%]">{{ blog.content }}</p>

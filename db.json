@@ -1,10 +1,46 @@
 {
   "blogs": [
-    { "id": 1,"path": "https://unsplash.com/photos/K95M2CrMwBc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OTZ8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwZW9wbGV8ZW58MHwwfHx8MTY1NzA5MzQzOA&force=true&w=640", "title": "Person 1", "content": "afdsssssssssssssssssssssssssssssssssss" },
-    { "id": 2,"path": "https://unsplash.com/photos/yHh07IGJAJM/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBlb3BsZXxlbnwwfDB8fHwxNjU3MDkwMDAy&force=true&w=640", "title": "Person 2", "content": "typicddddddddddggggggggdddddddddddddode" },
-    { "id": 3,"path": "https://unsplash.com/photos/IdrhaEt2Z9U/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTB8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwZW9wbGV8ZW58MHwwfHx8MTY1NzA5MDAwMg&force=true&w=640", "title": "Person 3", "content": "typffffffffffffffffffffffffffffffficode" },
-    { "id": 4,"path": "https://unsplash.com/photos/TiynDEOiwRc/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjZ8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwZW9wbGV8ZW58MHwwfHx8MTY1NzA5MzMzMQ&force=true&w=640", "title": "Person 4", "content": "typeeeeeeeeeeeddddddddddeeeeeeeeeeicode" },
-    { "id": 5,"path": "https://unsplash.com/photos/CVvOhaqIjSk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NDl8fGJsYWNrJTIwYW5kJTIwd2hpdGUlMjBwZW9wbGV8ZW58MHwwfHx8MTY1NzA5MzM1OA&force=true&w=640", "title": "Person 4", "content": "typeeeeeeeeeeeddddddddddeeeeeeeeeeicode" },
-    { "id": 6,"path": "https://unsplash.com/photos/v01YAv0Qt8k/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU3MDkzNjIw&force=true&w=640", "title": "Person 4", "content": "typeeeeeeeeeeeddddddddddeeeeeeeeeeicode" }
+    {
+      "id": 1, 
+      "url": "http://localhost:8081/assets/image1.jpg",
+      "title": "More than just a music festival", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": "cv"
+      },
+      {
+      "id": 2, 
+      "url": "http://localhost:8081/assets/image2.jpg",
+      "title": "Life tastes better with coffee", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": ""
+      },
+      {
+      "id": 3, 
+      "url": "http://localhost:8081/assets/image3.jpg",
+      "title": "American dream", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": ""
+      },
+      {
+      "id": 4, 
+      "url": "http://localhost:8081/assets/image4.jpg",
+      "title": "A day exploring the Alps", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": ""
+      },
+      {
+      "id": 5, 
+      "url": "http://localhost:8081/assets/image5.jpg",
+      "title": "Top 10 song for running", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": ""
+      },
+       {
+      "id": 6,
+      "url": "http://localhost:8081/assets/image6.jpg", 
+      "title": "Cold winter days", 
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori", 
+      "description": ""
+      }
   ]
 }
