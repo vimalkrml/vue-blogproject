@@ -1,34 +1,41 @@
 <template>
   <section>
-    <div class="flex flex-wrap gap-5">
-      <div class="w-[40%] mx-auto mb-5" v-for="blog in blogs" :key="blog.id">
+    <div class="md:flex flex-wrap gap-5" v-if="blogs.length > 0">
+      <div
+        class="md:w-[40%] mx-auto mb-20 md:mb-5"
+        v-for="blog in blogs"
+        :key="blog.id"
+      >
         <router-link
           :to="{ name: 'ShowBlogs', params: { id: blog.id } }"
           class="cursor-pointer text-xs"
         >
-          <img :src="blog.url" class="block max-w-full object-cover mb-3.5" />
-
+          <img
+            :src="blog.url"
+            class="block mb-5 h-[300px] md:h-[300px] lg:h-[395px] w-full object-cover"
+          />
           <h3 class="font-secondary text-sm opacity-50 mb-3.5 uppercase">
             Lifestyle
           </h3>
           <div v-show="blogs">
             <h2 class="text-3xl font-primary mb-8">{{ blog.title }}</h2>
-            <p class="text-sm font-primary leading-6 tracking-[0.6px]">
+            <p
+              class="text-sm font-primary text-[#626262] leading-6 tracking-[0.6px]"
+            >
               {{ blog.content }}
             </p>
           </div>
         </router-link>
       </div>
     </div>
-
-    <div class="text-center mt-10 mb-20">
-      <button class="border-2 border-gray-300 px-4 py-2">Load more</button>
-    </div>
+    <no-blogs v-else></no-blogs>
   </section>
 </template>
 
 <script>
+import NoBlogs from "./No-blogs.vue";
 export default {
+  components: { NoBlogs },
   data() {
     return {
       blogs: "",
