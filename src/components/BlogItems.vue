@@ -1,8 +1,11 @@
 <template>
   <section>
-    <div class="md:flex flex-wrap gap-5" v-if="blogs.length > 0">
+    <div
+      class="md:flex flex-wrap justify-between gap-5"
+      v-if="blogs.length > 0"
+    >
       <div
-        class="md:w-[40%] mx-auto mb-20 md:mb-5"
+        class="md:w-[45%] mb-20 md:mb-5"
         v-for="blog in blogs"
         :key="blog.id"
       >

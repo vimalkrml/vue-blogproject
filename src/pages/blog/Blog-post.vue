@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="flex justify-between p-1 px-16 py-6">
+    <nav class="flex justify-between px-4 py-6">
       <router-link :to="{ name: 'Home' }">
         <h1 class="font-miminmo text-2xl tracking-widest">MIMINMØ</h1>
       </router-link>
@@ -12,17 +12,14 @@
         <button class="">CREATE BLOG</button>
       </router-link>
     </nav>
-    <tiptap class="text-center" />
+    <!-- <tiptap class="text-center" /> -->
   </div>
 </template>
 
 <script>
-import Tiptap from "../../components/Tip-tap.vue";
+// import Tiptap from "../../components/Tip-tap.vue";
 
 export default {
   name: "Nav-bar",
-  components: {
-    Tiptap,
-  },
 };
 </script>

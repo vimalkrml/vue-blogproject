@@ -45,14 +45,16 @@
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
         >Blog Description</label
       >
-      <textarea
+
+      <!-- <textarea
         v-model="blogDescription"
         type="text"
         maxlength="2000"
         class="resize-none h-52 shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
         placeholder="Not exceeds more than 2000 words"
         required
-      />
+      /> -->
+      <tip-tap-vue v-model="blogDescription"></tip-tap-vue>
     </div>
     <div class="mb-6">
       <label
@@ -112,8 +114,12 @@
 </template>
 
 <script>
+import TipTapVue from "./Tip-tap.vue";
 export default {
   name: "CreateBlog",
+  components: {
+    TipTapVue,
+  },
   data() {
     return {
       blogTitle: "",
