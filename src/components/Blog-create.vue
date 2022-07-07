@@ -1,5 +1,5 @@
 <template>
-  <form class="px-20" v-show="show">
+  <form class="px-20">
     <div class="mb-6">
       <label
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
@@ -65,7 +65,10 @@
       >
       <textarea
         type="text"
+        maxlength="100"
         class="
+          h-28
+          resize-none
           shadow-sm
           bg-gray-50
           border border-gray-300
@@ -94,7 +97,10 @@
       >
       <textarea
         type="text"
+        maxlength="2000"
         class="
+          resize-none
+          h-52
           shadow-sm
           bg-gray-50
           border border-gray-300
@@ -152,7 +158,10 @@
       >
       <textarea
         type="text"
+        maxlength="100"
         class="
+          resize-none
+          h-24
           shadow-sm
           bg-gray-50
           border border-gray-300
@@ -204,29 +213,29 @@
         ></label
       >
     </div>
-    <button
-      type="submit"
-      class="
-        text-white
-        bg-slate-600
-        hover:bg-slate-800
-        focus:ring-4 focus:outline-none focus:ring-slate-300
-        font-medium
-        rounded-lg
-        text-sm
-        px-5
-        py-2.5
-        text-center
-        dark:bg--600 dark:hover:bg-slate-700 dark:focus:ring-slate-800
-      "
-    >
-      Add Blog
-    </button>
+    <div class="text-center">
+      <button
+        type="submit"
+        class="
+          text-white
+          bg-slate-600
+          hover:bg-slate-800
+          focus:ring-4 focus:outline-none focus:ring-slate-300
+          font-medium
+          rounded-lg
+          text-sm
+          px-5
+          py-2.5
+          text-center
+          dark:bg--600 dark:hover:bg-slate-700 dark:focus:ring-slate-800
+        "
+      >
+        Add Blog
+      </button>
+    </div>
   </form>
 </template>
 
 <script>
-export default {
-  props: ["show"],
-};
+export default {};
 </script>
