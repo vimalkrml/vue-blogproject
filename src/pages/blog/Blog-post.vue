@@ -12,23 +12,11 @@
         <button class="">CREATE BLOG</button>
       </router-link>
     </nav>
-<<<<<<< HEAD
-=======
-    <!-- <tiptap class="text-center" /> -->
->>>>>>> e55bd3e0a0c669dbaea9cada3ed2beb193df1884
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
 export default {
   name: "Nav-bar",
-  components: {},
-=======
-// import Tiptap from "../../components/Tip-tap.vue";
-
-export default {
-  name: "Nav-bar",
->>>>>>> e55bd3e0a0c669dbaea9cada3ed2beb193df1884
 };
 </script>
