@@ -54,7 +54,7 @@
             B
           </button>
           <button
-            class="p-[2px] hhover:border font-primary italic"
+            class="p-[2px] hover:border font-primary italic"
             type="button"
             @click="toggleItalic"
           >
