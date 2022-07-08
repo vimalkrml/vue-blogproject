@@ -213,7 +213,7 @@
         ></label
       >
     </div>
-    <div class="text-center">
+    <div class="text-center mb-20">
       <button
         type="submit"
         class="
@@ -237,5 +237,7 @@
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
