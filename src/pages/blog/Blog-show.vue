@@ -7,7 +7,14 @@
       <div class="w-5 md:w-8">
         <img src="../../assets/left-arrow.png" alt="Back" class="w-[20px]" />
       </div>
-      <h1 class="text-[#626262]">Back to Home</h1>
+
+      <lord-icon
+        src="https://cdn.lordicon.com/igpbsrza.json"
+        trigger="morph"
+        colors="primary:#121331"
+        class="w-7"
+      >
+      </lord-icon>
     </router-link>
 
     <no-blogs v-if="isLoading"></no-blogs>

@@ -26,7 +26,6 @@
           dark:focus:border-blue-500
           dark:shadow-sm-light
         "
-        placeholder="Blog title"
         required
       />
     </div>
@@ -56,7 +55,7 @@
           dark:focus:border-blue-500
           dark:shadow-sm-light
         "
-        placeholder="eg:https://unsplash.com/photos"
+        placeholder="eg: https://unsplash.com/photos"
         required
       />
     </div>

@@ -20,56 +20,67 @@
       dark:shadow-sm-light
     "
   >
-    <div class="flex gap-3">
-      <div class="flex gap-1">
-        <button
-          class="p-[2px] hover:border font-secondary"
-          type="button"
-          @click="handleH1"
-        >
-          H1
-        </button>
-        <button
-          class="p-[2px] hover:border font-secondary"
-          type="button"
-          @click="handleH2"
-        >
-          H2
-        </button>
-        <button
-          class="p-[2px] hover:border font-secondary"
-          type="button"
-          @click="handleH3"
-        >
-          H3
-        </button>
+    <div class="flex justify-between">
+      <div class="flex gap-3">
+        <div class="flex gap-1">
+          <button
+            class="p-[2px] hover:border font-secondary shadow-sm"
+            type="button"
+            @click="handleH1"
+          >
+            H1
+          </button>
+          <button
+            class="p-[2px] hover:border font-secondary"
+            type="button"
+            @click="handleH2"
+          >
+            H2
+          </button>
+          <button
+            class="p-[2px] hover:border font-secondary"
+            type="button"
+            @click="handleH3"
+          >
+            H3
+          </button>
+        </div>
+        <div class="flex gap-1">
+          <button
+            class="p-[2px] hover:border font-secondary"
+            type="button"
+            @click="toggleBold"
+          >
+            B
+          </button>
+          <button
+            class="p-[2px] hhover:border font-primary italic"
+            type="button"
+            @click="toggleItalic"
+          >
+            I
+          </button>
+          <button
+            class="p-[2px] hover:border font-primary italic border-b"
+            type="button"
+            @click="toggleUnderline"
+          >
+            U
+          </button>
+        </div>
       </div>
-      <div class="flex gap-1">
-        <button
-          class="p-[2px] hover:border font-secondary"
-          type="button"
-          @click="toggleBold"
-        >
-          B
-        </button>
-        <button
-          class="p-[2px] hhover:border font-primary italic"
-          type="button"
-          @click="toggleItalic"
-        >
-          I
-        </button>
-        <button
-          class="p-[2px] hover:border font-primary italic border-b"
-          type="button"
-          @click="toggleUnderline"
-        >
-          U
-        </button>
-      </div>
+      <lord-icon
+        @click="deleteText"
+        src="https://cdn.lordicon.com/qsloqzpf.json"
+        trigger="hover"
+        colors="primary:#ffffff"
+        class="w-5 cursor-pointer"
+      >
+      </lord-icon>
     </div>
-    <div>
-      <editor-content class="mt-5" :editor="editor" />
+
+    <div class="mt-5">
+      <editor-content :editor="editor" />
     </div>
   </div>
 </template>
@@ -117,6 +128,9 @@ export default {
     },
     toggleUnderline() {
       this.editor.commands.toggleUnderline();
+    },
+    deleteText() {
+      this.editor.commands.deleteSelection();
     },
   },
   watch: {

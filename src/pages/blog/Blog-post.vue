@@ -7,9 +7,15 @@
 
       <router-link
         :to="{ name: 'CreateBlog' }"
-        class="font-primary flex gap-20 text-[#626262] hover:text-black"
+        class="font-primary text-[#626262] hover:text-black"
       >
-        <button class="">CREATE BLOG</button>
+        <lord-icon
+          src="https://cdn.lordicon.com/txmlvqat.json"
+          trigger="hover"
+          class="w-12 h-12"
+        >
+        </lord-icon>
+        <button>CREATE BLOG</button>
       </router-link>
     </nav>
   </div>
