@@ -23,21 +23,21 @@
     <div class="flex gap-3">
       <div class="flex gap-1">
         <button
-          class="p-[2px] hover:text-base hover:border font-secondary"
+          class="p-[2px] hover:border font-secondary"
           type="button"
           @click="handleH1"
         >
           H1
         </button>
         <button
-          class="p-[2px] hover:text-base hover:border font-secondary"
+          class="p-[2px] hover:border font-secondary"
           type="button"
           @click="handleH2"
         >
           H2
         </button>
         <button
-          class="p-[2px] hover:text-base hover:border font-secondary"
+          class="p-[2px] hover:border font-secondary"
           type="button"
           @click="handleH3"
         >
@@ -46,27 +46,21 @@
       </div>
       <div class="flex gap-1">
         <button
-          class="p-[2px] hover:text-base hover:border font-secondary"
+          class="p-[2px] hover:border font-secondary"
           type="button"
           @click="toggleBold"
         >
           B
         </button>
         <button
-          class="p-[2px] hover:text-base hover:border font-primary italic"
+          class="p-[2px] hhover:border font-primary italic"
           type="button"
           @click="toggleItalic"
         >
           I
         </button>
         <button
-          class="
-            p-[2px]
-            hover:text-base hover:border
-            font-primary
-            italic
-            border-b
-          "
+          class="p-[2px] hover:border font-primary italic border-b"
           type="button"
           @click="toggleUnderline"
         >

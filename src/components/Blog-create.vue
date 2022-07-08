@@ -72,7 +72,10 @@
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
         >Blog Description</label
       >
-      <tip-tap-vue class="h-52" v-model="blogDescription"></tip-tap-vue>
+      <tip-tap-vue
+        class="h-52 my-custom-class"
+        v-model="blogDescription"
+      ></tip-tap-vue>
     </div>
     <div class="mb-6">
       <label
@@ -209,3 +212,4 @@ export default {
   },
 };
 </script>
+
