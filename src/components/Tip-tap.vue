@@ -74,8 +74,9 @@
         </button>
       </div>
     </div>
-
-    <editor-content class="mt-5" :editor="editor" />
+    <div>
+      <editor-content class="mt-5" :editor="editor" />
+    </div>
   </div>
 </template>
 
@@ -161,6 +162,9 @@ export default {
 </script>
 
 <style>
+.ProseMirror:focus {
+  outline: none;
+}
 .ProseMirror h1 {
   font-size: 3rem;
 }
