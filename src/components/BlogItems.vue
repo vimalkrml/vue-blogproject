@@ -1,8 +1,11 @@
 <template>
   <section>
-    <div class="md:flex flex-wrap gap-5" v-if="blogs.length > 0">
+    <div
+      class="md:flex flex-wrap justify-between gap-5"
+      v-if="blogs.length > 0"
+    >
       <div
-        class="md:w-[40%] mx-auto mb-20 md:mb-5"
+        class="md:w-[45%] mb-20 md:mb-5"
         v-for="blog in blogs"
         :key="blog.id"
       >
@@ -12,7 +15,7 @@
         >
           <img
             :src="blog.url"
-            class="block mb-5 h-[300px] md:h-[300px] lg:h-[395px] w-full object-cover "
+            class="block mb-5 h-[300px] md:h-[300px] lg:h-[395px] w-full object-cover"
           />
           <h3 class="font-secondary text-sm opacity-50 mb-3.5 uppercase">
             Lifestyle
@@ -62,6 +65,10 @@ export default {
   async created() {
     console.log(await this.getBlogs());
     this.blogs = await this.getBlogs();
+    // let tempblog = JSON.parse(JSON.stringify(this.blogs));
+    // tempblog.forEach((blog) => {
+    //   this.blogImages.push(blog.path);
+    // });
   },
 };
 </script>
