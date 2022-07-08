@@ -75,7 +75,7 @@
       </div>
     </div>
 
-    <editor-content class="mt-5 border-none" :editor="editor" />
+    <editor-content class="mt-5" :editor="editor" />
   </div>
 </template>
 

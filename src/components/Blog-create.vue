@@ -65,14 +65,14 @@
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
         >Blog Content</label
       >
-      <tip-tap-vue v-model="blogContent"></tip-tap-vue>
+      <tip-tap-vue class="h-32" v-model="blogContent"></tip-tap-vue>
     </div>
     <div class="mb-6">
       <label
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
         >Blog Description</label
       >
-      <tip-tap-vue v-model="blogDescription"></tip-tap-vue>
+      <tip-tap-vue class="h-52" v-model="blogDescription"></tip-tap-vue>
     </div>
     <div class="mb-6">
       <label
@@ -109,7 +109,7 @@
         class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-500"
         >Blog conclusion</label
       >
-      <tip-tap-vue v-model="blogConclusion"></tip-tap-vue>
+      <tip-tap-vue class="h-40" v-model="blogConclusion"></tip-tap-vue>
     </div>
     <div class="flex items-start mb-6">
       <div class="flex items-center h-5">
