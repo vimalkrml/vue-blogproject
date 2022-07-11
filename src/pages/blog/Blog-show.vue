@@ -23,6 +23,7 @@
       <img
         :src="blog.url"
         class="
+          grayscale
           block
           mb-5
           h-[300px]
